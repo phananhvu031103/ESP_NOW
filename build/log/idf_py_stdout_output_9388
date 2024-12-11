@@ -1,0 +1,53 @@
+[1/37] Linking C static library esp-idf\app_trace\libapp_trace.a
+[2/37] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[3/37] Linking C static library esp-idf\unity\libunity.a
+[4/37] Linking C static library esp-idf\console\libconsole.a
+[5/37] Linking C static library esp-idf\protobuf-c\libprotobuf-c.a
+[6/37] Linking C static library esp-idf\espcoredump\libespcoredump.a
+[7/37] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[8/37] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\esp\station\build\bootloader\esp-idf\esptool_py && D:\esp\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/esp/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/esp/station/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[9/37] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[10/37] Linking C static library esp-idf\sdmmc\libsdmmc.a
+[11/37] Linking C static library esp-idf\json\libjson.a
+[12/37] Linking C static library esp-idf\cmock\libcmock.a
+[13/37] Linking C static library esp-idf\nvs_sec_provider\libnvs_sec_provider.a
+[14/37] Linking C static library esp-idf\mqtt\libmqtt.a
+[15/37] Linking C static library esp-idf\protocomm\libprotocomm.a
+[16/37] No install step for 'bootloader'
+[17/37] Linking C static library esp-idf\perfmon\libperfmon.a
+[18/37] Linking C static library esp-idf\spiffs\libspiffs.a
+[19/37] Linking C static library esp-idf\app_http_server\libapp_http_server.a
+[20/37] Linking C static library esp-idf\fatfs\libfatfs.a
+[21/37] Linking C static library esp-idf\dht11\libdht11.a
+[22/37] Linking C static library esp-idf\output_iot\liboutput_iot.a
+[23/37] Completed 'bootloader'
+[24/37] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[25/37] Linking C static library esp-idf\wifi_provisioning\libwifi_provisioning.a
+[26/37] Building C object esp-idf/ws2812b/CMakeFiles/__idf_ws2812b.dir/ws2812b.c.obj
+In file included from D:/esp/station/components/ws2812b/ws2812b.c:5:
+D:/esp/Espressif/frameworks/esp-idf-v5.2.2/components/driver/deprecated/driver/rmt.h:18:2: warning: #warning "The legacy RMT driver is deprecated, please use driver/rmt_tx.h and/or driver/rmt_rx.h" [-Wcpp]
+   18 | #warning "The legacy RMT driver is deprecated, please use driver/rmt_tx.h and/or driver/rmt_rx.h"
+      |  ^~~~~~~
+[27/37] Building C object esp-idf/led_strip/CMakeFiles/__idf_led_strip.dir/led_strip.c.obj
+In file included from D:/esp/station/components/led_strip/led_strip.c:20:
+D:/esp/Espressif/frameworks/esp-idf-v5.2.2/components/driver/deprecated/driver/rmt.h:18:2: warning: #warning "The legacy RMT driver is deprecated, please use driver/rmt_tx.h and/or driver/rmt_rx.h" [-Wcpp]
+   18 | #warning "The legacy RMT driver is deprecated, please use driver/rmt_tx.h and/or driver/rmt_rx.h"
+      |  ^~~~~~~
+[28/37] Linking C static library esp-idf\led_strip\libled_strip.a
+[29/37] Linking C static library esp-idf\ws2812b\libws2812b.a
+[30/37] Linking C static library esp-idf\main\libmain.a
+[31/37] Generating ld/sections.ld
+[32/37] Generating web.html.S
+[33/37] Building C object CMakeFiles/wifi_station.elf.dir/project_elf_src_esp32.c.obj
+[34/37] Building ASM object CMakeFiles/wifi_station.elf.dir/web.html.S.obj
+[35/37] Linking CXX executable wifi_station.elf
+[36/37] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/esp/station/build/wifi_station.bin
+[37/37] cmd.exe /C "cd /D D:\esp\station\build\esp-idf\esptool_py && D:\esp\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/esp/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/esp/station/build/partition_table/partition-table.bin D:/esp/station/build/wifi_station.bin"
+wifi_station.bin binary size 0xbdd00 bytes. Smallest app partition is 0x100000 bytes. 0x42300 bytes (26%) free.

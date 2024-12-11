@@ -1,0 +1,486 @@
+[0;32mI (36) boot: chip revisio�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 20 2024 10:50:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=237bch (145340) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000337e4 vaddr=3ffb0000 size=03c04h ( 15364) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=000373f0 vaddr=40080000 size=08c28h ( 35880) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=826f0h (534256) map[0m
+[0;32mI (358) esp_image: segment 4: paddr=000c2718 vaddr=40088c28 size=0edcch ( 60876) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (406) cpu_start: Multicore app[0m
+[0;32mI (414) cpu_start: Pro cpu start user code[0m
+[0;32mI (414) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) cpu_start: Application information:[0m
+[0;32mI (417) cpu_start: Project name:     wifi_station[0m
+[0;32mI (423) cpu_start: App version:      1[0m
+[0;32mI (427) cpu_start: Compile time:     Aug 20 2024 10:50:02[0m
+[0;32mI (433) cpu_start: ELF file SHA256:  2e2df8903...[0m
+[0;32mI (439) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (444) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (449) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (454) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (472) heap_init: At 3FFB7CE8 len 00028318 (160 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (484) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (491) heap_init: At 400979F4 len 0000860C (33 KiB): IRAM[0m
+[0;32mI (498) spi_flash: detected chip: generic[0m
+[0;32mI (501) spi_flash: flash io: dio[0m
+[0;33mW (506) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (517) main_task: Started on CPU0[0m
+[0;32mI (527) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1567) wifi station: ESP_WIFI_MODE_STA[0m
+I (1577) wifi:wifi driver task: 3ffbfe78, prio:23, stack:6656, core=0
+I (1597) wifi:wifi firmware version: 3e0076f
+I (1597) wifi:wifi certification version: v7.0
+I (1597) wifi:config NVS flash: enabled
+I (1597) wifi:config nano formating: disabled
+I (1597) wifi:Init data frame dynamic rx buffer num: 32
+I (1607) wifi:Init static rx mgmt buffer num: 5
+I (1607) wifi:Init management short buffer num: 32
+I (1607) wifi:Init dynamic tx buffer num: 32
+I (1617) wifi:Init static rx buffer size: 1600
+I (1617) wifi:Init static rx buffer num: 10
+I (1627) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1627) wifi_init: rx ba win: 6[0m
+[0;32mI (1627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1637) wifi_init: udp mbox: 6[0m
+[0;32mI (1637) wifi_init: tcp mbox: 6[0m
+[0;32mI (1647) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1647) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1647) wifi_init: tcp mss: 1440[0m
+[0;32mI (1657) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1657) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1667) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1757) wifi:mode : sta (10:06:1c:41:94:54)
+I (1757) wifi:enable tsf
+[0;32mI (1767) wifi station: wifi_init_sta finished.[0m
+I (1777) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (1777) wifi:state: init -> auth (b0)
+I (1787) wifi:state: auth -> init (8a0)
+I (1787) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (1787) wifi station: retry to connect to the AP[0m
+[0;32mI (1787) wifi station: connect to the AP fail[0m
+[0;32mI (4207) wifi station: retry to connect to the AP[0m
+[0;32mI (4207) wifi station: connect to the AP fail[0m
+I (4217) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4217) wifi:state: init -> auth (b0)
+I (4217) wifi:state: auth -> assoc (0)
+I (4257) wifi:state: assoc -> run (10)
+I (4287) wifi:connected with Anh Vu 2.4G, aid = 3, channel 6, BW20, bssid = 00:c8:96:ab:b8:e1
+I (4287) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (4297) wifi:pm start, type: 1
+
+I (4297) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4317) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:ab:b8:e1), tid:7, ssn:0, winSize:64
+I (4347) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5307) esp_netif_handlers: sta ip: 192.168.100.221, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (5307) wifi station: got ip:192.168.100.221[0m
+[0;32mI (5307) wifi station: connected to ap SSID:Anh Vu 2.4G password:anhvu2003[0m
+[0;32mI (5317) app_http_server: Starting server on port: '80'[0m
+[0;32mI (5327) app_http_server: Registering URI handlers[0m
+[0;32mI (5327) main_task: Returned from app_main()[0m
+I (5997) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:ab:b8:e1), tid:0, ssn:0, winSize:64
+[0;32mI (13887) app_http_server: Found URL query parameter => color=261A25[0m
+[0;32mI (17407) app_http_server: Found URL query parameter => color=1A2607[0m
+[0;32mI (20127) app_http_server: Found URL query parameter => color=261104[0m
+[0;32mI (23527) app_http_server: Found URL query parameter => color=252326[0m
+[0;32mI (28827) app_http_server: Found URL query parameter => color=221126[0m
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+66
+67
+72
+74
+[0;33mW (42937) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+75
+80
+[0;33mW (42987) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+81
+82?�
+85
+87
+86
+80
+72
+65
+33
+[0;33mW (43357) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+26
+22
+26
+23
+82?�
+85
+81
+87
+90
+[0;33mW (43867) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+95
+96
+[0;33mW (43927) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+99
+[0;33mW (43957) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+100
+97
+87
+61
+53
+47
+28
+18
+12
+9
+4
+5
+8
+12
+16
+19
+22
+31
+35
+41?�
+45
+52
+57
+62
+76
+79
+[0;33mW (45047) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+82
+84
+86
+90
+92
+93
+85
+89
+57
+[0;33mW (45457) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+51
+45
+43
+[0;32mI (50177) app_http_server: Found URL query parameter => color=0E1E26[0m
+[0;32mI (57507) app_http_server: Found URL query parameter => color=35718F[0m
+[0;32mI (60307) app_http_server: Found URL query parameter => color=56568F[0m
+[0;32mI (62517) app_http_server: Found URL query parameter => color=688F53[0m
+[0;32mI (64467) app_http_server: Found URL query parameter => color=8F6956[0m
+[0;32mI (68247) app_http_server: Found URL query parameter => color=000000[0m
+[0;32mI (72047) app_http_server: Found URL query parameter => color=63493C[0m
+[0;32mI (75227) app_http_server: Found URL query parameter => color=45332A[0m
+[0;32mI (78797) app_http_server: Found URL query parameter => color=30241D[0m
+[0;32mI (81667) app_http_server: Found URL query parameter => color=0E300C[0m
+[0;32mI (1301687) app_http_server: Found URL query parameter => color=D457FF[0m
+[0;32mI (1305137) app_http_server: Found URL query parameter => color=642978[0m
+[0;32mI (1307627) app_http_server: Found URL query parameter => color=421B4F[0m
+[0;32mI (1311507) app_http_server: Found URL query parameter => color=281130[0m
+[0;33mW (1311707) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+[0;32mI (2108257) app_http_server: Found URL query parameter => color=C459FF[0m
+[0;32mI (2112657) app_http_server: Found URL query parameter => color=582873[0m
+[0;32mI (2116137) app_http_server: Found URL query parameter => color=2F153D[0m
+[0;32mI (2121467) app_http_server: Found URL query parameter => color=1F0E29[0m
+[0;32mI (2129557) app_http_server: Found URL query parameter => color=181729[0m
+[0;32mI (2133237) app_http_server: Found URL query parameter => color=290213[0m
+Data: 1
+Data: 0
+[0;33mW (2173107) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+[0;32mI (2187617) app_http_server: Found URL query parameter => color=290002[0m
+[0;32mI (2191607) app_http_server: Found URL query parameter => color=290017[0m
+[0;32mI (2195907) app_http_server: Found URL query parameter => color=290011[0m
+[0;32mI (2200927) app_http_server: Found URL query parameter => color=1C000C[0m
+h�ښ�j%�(36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=237bch (145340) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000337e4 vaddr=3ffb0000 size=03c04h ( 15364) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=000373f0 vaddr=40080000 size=08c28h ( 35880) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=826f0h (534256) map[0m
+[0;32mI (358) esp_image: segment 4: paddr=000c2718 vaddr=40088c28 size=0edcch ( 60876) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (406) cpu_start: Multicore app[0m
+[0;32mI (414) cpu_start: Pro cpu start user code[0m
+[0;32mI (414) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) cpu_start: Application information:[0m
+[0;32mI (417) cpu_start: Project name:     wifi_station[0m
+[0;32mI (423) cpu_start: App version:      1[0m
+[0;32mI (427) cpu_start: Compile time:     Aug 20 2024 10:50:02[0m
+[0;32mI (433) cpu_start: ELF file SHA256:  2e2df8903...[0m
+[0;32mI (439) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (444) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (449) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (454) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (472) heap_init: At 3FFB7CE8 len 00028318 (160 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (484) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (491) heap_init: At 400979F4 len 0000860C (33 KiB): IRAM[0m
+[0;32mI (498) spi_flash: detected chip: generic[0m
+[0;32mI (501) spi_flash: flash io: dio[0m
+[0;33mW (506) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (517) main_task: Started on CPU0[0m
+[0;32mI (527) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1567) wifi station: ESP_WIFI_MODE_STA[0m
+I (1577) wifi:wifi driver task: 3ffbfe78, prio:23, stack:6656, core=0
+I (1597) wifi:wifi firmware version: 3e0076f
+I (1597) wifi:wifi certification version: v7.0
+I (1597) wifi:config NVS flash: enabled
+I (1597) wifi:config nano formating: disabled
+I (1597) wifi:Init data frame dynamic rx buffer num: 32
+I (1607) wifi:Init static rx mgmt buffer num: 5
+I (1607) wifi:Init management short buffer num: 32
+I (1607) wifi:Init dynamic tx buffer num: 32
+I (1617) wifi:Init static rx buffer size: 1600
+I (1617) wifi:Init static rx buffer num: 10
+I (1627) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1627) wifi_init: rx ba win: 6[0m
+[0;32mI (1627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1637) wifi_init: udp mbox: 6[0m
+[0;32mI (1637) wifi_init: tcp mbox: 6[0m
+[0;32mI (1647) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1647) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1647) wifi_init: tcp mss: 1440[0m
+[0;32mI (1657) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1657) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1667) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1757) wifi:mode : sta (10:06:1c:41:94:54)
+I (1757) wifi:enable tsf
+[0;32mI (1767) wifi station: wifi_init_sta finished.[0m
+I (1777) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (1787) wifi:state: init -> auth (b0)
+I (1797) wifi:state: auth -> init (8a0)
+I (1797) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (1797) wifi station: retry to connect to the AP[0m
+[0;32mI (1797) wifi station: connect to the AP fail[0m
+[0;32mI (4207) wifi station: retry to connect to the AP[0m
+[0;32mI (4207) wifi station: connect to the AP fail[0m
+I (4217) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4227) wifi:state: init -> auth (b0)
+I (4227) wifi:state: auth -> assoc (0)
+I (4247) wifi:state: assoc -> run (10)
+I (4287) wifi:connected with Anh Vu 2.4G, aid = 3, channel 6, BW20, bssid = 00:c8:96:ab:b8:e1
+I (4287) wifi:security: WPA2-PSK, phy: bgn, rssi: -59
+I (4287) wifi:pm start, type: 1
+
+I (4287) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4307) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:ab:b8:e1), tid:7, ssn:0, winSize:64
+I (4337) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5297) esp_netif_handlers: sta ip: 192.168.100.221, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (5297) wifi station: got ip:192.168.100.221[0m
+[0;32mI (5297) wifi station: connected to ap SSID:Anh Vu 2.4G password:anhvu2003[0m
+[0;32mI (5307) app_http_server: Starting server on port: '80'[0m
+[0;32mI (5317) app_http_server: Registering URI handlers[0m
+[0;32mI (5317) main_task: Returned from app_main()[0m
+I (6597) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:ab:b8:e1), tid:0, ssn:0, winSize:64
+[0;32mI (15717) app_http_server: Found URL query parameter => color=2B091C[0m
+[0;32mI (21857) app_http_server: Found URL query parameter => color=2E0A1E[0m
+[0;32mI (30457) app_http_server: Found URL query parameter => color=2E031B[0m
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+[0;33mW (4073607) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+Data: 0
+Data: 1
+Data: 0
+[0;32mI (4077277) app_http_server: Found URL query parameter => color=09292E[0m
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+[0;32mI (4868327) app_http_server: Found URL query parameter => color=091806[0m
+[0;32mI (4872377) app_http_server: Found URL query parameter => color=070418[0m
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+[0;32mI (4903737) app_http_server: Found URL query parameter => color=180308[0m
+[0;32mI (4915617) app_http_server: Found URL query parameter => color=18180D[0m
+[0;32mI (4920427) app_http_server: Found URL query parameter => color=181505[0m
+[0;32mI (4924527) app_http_server: Found URL query parameter => color=F0D232[0m
+[0;32mI (4927597) app_http_server: Found URL query parameter => color=F0D232[0m
+[0;32mI (4935487) app_http_server: Found URL query parameter => color=1F1B06[0m
+[0;32mI (4954837) app_http_server: Found URL query parameter => color=1F0815[0m
+[0;32mI (5272307) app_http_server: Found URL query parameter => color=181F17[0m
+Data: 1
+Data: 1
+Data: 0
+[0;33mW (5439947) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+Data: 0
+Data: 1
+[0;32mI (5443967) app_http_server: Found URL query parameter => color=0B072E[0m
+[0;32mI (5448137) app_http_server: Found URL query parameter => color=23052E[0m
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+[0;33mW (5775677) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (5802627) app_http_server: Found URL query parameter => color=FF0F59[0m
+[0;32mI (5806087) app_http_server: Found URL query parameter => color=EEFF7A[0m
+[0;32mI (5811767) app_http_server: Found URL query parameter => color=22020C[0m
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+100
+90
+[0;32mI (6334567) app_http_server: Found URL query parameter => color=090222[0m
+Data: 0
+Data: 1
+Data: 1
+[0;33mW (6409767) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+Data: 0
+64
+[0;32mI (7465877) app_http_server: Found URL query parameter => color=090222[0m
+[0;32mI (7473997) app_http_server: Found URL query parameter => color=220612[0m
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+[0;32mI (9370957) app_http_server: Found URL query parameter => color=2E0F1E[0m
+[0;32mI (9375937) app_http_server: Found URL query parameter => color=180C2E[0m
+Data: 1
+Data: 1
+Data: 0
+Data: 0
+Data: 1
+Data: 1
+Data: 0
+[0;32mI (9390477) app_http_server: Found URL query parameter => color=142E06[0m
+[0;32mI (9394277) app_http_server: Found URL query parameter => color=0C1C04[0m
+[0;32mI (9403267) app_http_server: Found URL query parameter => color=6DFF24[0m
+[0;32mI (9426517) app_http_server: Found URL query parameter => color=091403[0m
